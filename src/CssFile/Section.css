@@ -1,0 +1,89 @@
+.wrap{
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;  
+    
+}
+.section__footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1%;
+}
+.section__text{
+    
+   padding-top: 10vh;
+    text-align: center;
+   
+}
+.section__btn{
+    display: flex;
+    flex-direction: row;
+    gap: 13px;
+    justify-content: center;
+
+    opacity: 0.8;
+    text-transform: uppercase;
+    margin-bottom: 5vh;
+
+}
+.left__btn{
+    background-color: rgb(110, 107, 103);
+    height: 40px;
+    width: 256px;
+    color: white;
+    display: flex;
+    border-radius: 9px;
+    font-size: larger;
+    font-weight: 700;
+   align-items: center;
+   justify-content: center;
+   cursor: pointer;
+
+
+}
+.right__btn{
+    background-color: rgb(253, 251, 249);
+    height: 40px;
+    width: 256px;
+    color: rgb(99, 91, 91);
+    display: flex;
+    border-radius: 9px;
+    font-size: larger;
+    font-weight: 700;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+}
+
+.down__arrow{
+    animation: arrow-animation infinite 1.5s;
+    overflow: hidden;
+}
+
+@media (max-width:768px){
+    .section__btn{
+        flex-direction: column;
+    }
+    
+}
+
+@keyframes arrow-animation{
+    0%, 20%, 50%, 80%, 100%{
+        transform: translateY(0);
+    }
+    40%{
+        transform: translateY(5px);
+    }
+    60%{
+        transform: translateY(3px);
+    }
+}
